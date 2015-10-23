@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage              = 'https://github.com/YannickL/QRCodeReaderViewController'
   s.authors               = { 'Yannick Loriot' => 'contact@yannickloriot.com' }
   s.social_media_url      = "https://twitter.com/yannickloriot"
-  s.source                = { :git => 'https://github.com/zhengjinghua-ext-forks/QRCodeReaderViewController.git',
+  s.source                = { :git => 'https://github.com/zhengjinghua/MQRCodeReaderViewController.git',
                               :tag => s.version.to_s }
   s.requires_arc          = true
   s.source_files  		  = "QRCodeReaderViewController", "QRCodeReaderViewController/**/*.{h,m}"
