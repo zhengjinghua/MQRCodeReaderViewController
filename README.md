@@ -1,5 +1,9 @@
 ## Thanks
-Modify from [https://github.com/yannickl/QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController)
+This projecd baesd on [QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController)
+
+## What did I modified?
+I modified and expanded the `QRCodeReaderView`, make the interface become more like **WeChat**.
+
 ## screenshot
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/qrcode_screenshot.gif)
 
@@ -9,7 +13,7 @@ Modify from [https://github.com/yannickl/QRCodeReaderViewController](https://git
 If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
 
 ``` bash
-pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua-ext-forks/QRCodeReaderViewController.git'
+pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua/MQRCodeReaderViewController.git'
 ```
 into your Podfile file.
 
@@ -22,37 +26,37 @@ into your Podfile file.
 ```objective-c
 - (IBAction)scanAction:(id)sender
 {
-  NSArray *types = @[AVMetadataObjectTypeQRCode];
-  _reader        = [QRCodeReaderViewController readerWithMetadataObjectTypes:types];
+	NSArray *types = @[AVMetadataObjectTypeQRCode];
+  	_reader        = [QRCodeReaderViewController readerWithMetadataObjectTypes:types];
   
-  // Set the presentation style
-  _reader.modalPresentationStyle = UIModalPresentationFormSheet;
+  	// Set the presentation style
+  	_reader.modalPresentationStyle = UIModalPresentationFormSheet;
   
-  // Using delegate methods
-  _reader.delegate = self;
+  	// Using delegate methods
+  	_reader.delegate = self;
   
-  // Or by using blocks
-  [_reader setCompletionWithBlock:^(NSString *resultAsString) {
-    [self dismissViewControllerAnimated:YES completion:^{
-      NSLog(@"%@", resultAsString);
-    }];
-  }];
+  	// Or by using blocks
+  	[_reader setCompletionWithBlock:^(NSString *resultAsString) {
+    	[self dismissViewControllerAnimated:YES completion:^{
+      		NSLog(@"%@", resultAsString);
+    	}];
+  	}];
   
-  [self presentViewController:_reader animated:YES completion:NULL];
+  	[self presentViewController:_reader animated:YES completion:NULL];
 }
 
 #pragma mark - QRCodeReader Delegate Methods
 
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result
 {
-  [self dismissViewControllerAnimated:YES completion:^{
-    NSLog(@"%@", result);
-  }];
+  	[self dismissViewControllerAnimated:YES completion:^{
+   		 NSLog(@"%@", result);
+  	}];
 }
 
 - (void)readerDidCancel:(QRCodeReaderViewController *)reader
 {
-  [self dismissViewControllerAnimated:YES completion:NULL];
+  	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 ```
 
