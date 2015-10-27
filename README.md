@@ -1,27 +1,27 @@
-## Thanks
-This projecd baesd on [QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController)
+## 说明 
+MQRCodeReaderViewController 是本人基于 [QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController) 封装的二维码扫描器, 其仿照微信的二维码扫描器的风格美化了界面.
 
-## What did I modified?
-I modified and expanded the `QRCodeReaderView`, make the interface become more like **WeChat**.
+## 修改内容
+本人继承和拓展了原有的 `QRCodeReaderView`, 使其风格和微信一致.
 
-## screenshot
+## 截屏
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/qrcode_screenshot.gif)
 
-## Install
+## 安装
 
-### CocoaPods
-If you're using [CocoaPods](http://cocoapods.org/) (You are not?! You should!!) just add
+### CocoaPods 安装
+
+将下面代码复制进你的 `Podfile` 文件中
 
 ``` bash
 pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua/MQRCodeReaderViewController.git'
 ```
-into your Podfile file.
 
-### Manually
+### 手工安装
 
-[Download](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) the project and copy the `QRCodeReaderViewController` folder into your project and then simply `#import "QRCodeReaderViewController.h"` in the file(s) you would like to use it in.
+[下载](https://github.com/YannickL/QRCodeReaderViewController/archive/master.zip) 此项目, 然后将该项目里的 `QRCodeReaderViewController` 文件夹里的所有文件复制进你的项目中, 然后在需要调用此项目的地方引入 `#import "QRCodeReaderViewController.h"`.
 
-## Usage
+## 使用
 
 ```objective-c
 - (IBAction)scanAction:(id)sender
@@ -60,7 +60,6 @@ into your Podfile file.
 }
 ```
 
-*Note that you should check whether the device supports the reader library by using the `[QRCodeReader isAvailable]` or the `[QRCodeReader supportsMetadataObjectTypes:nil]` methods.*
 
 
 
