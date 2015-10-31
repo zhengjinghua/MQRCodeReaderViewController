@@ -1,8 +1,10 @@
+[中文见这里](https://github.com/zhengjinghua/MQRCodeReaderViewController#readme-chinese)
+
 # MQRCodeReaderViewController
 ![screenshot](http://7xnfdc.com1.z0.glb.clouddn.com/qrcode_screenshot.gif)
 
 ## Description
-This projecd baesd on [QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController) 封装的二维码扫描器, 其仿照微信的二维码扫描器的风格美化了界面.
+This projecd baesd on [QRCodeReaderViewController](https://github.com/yannickl/QRCodeReaderViewController). 
 
 ## Modified
 I modified and expanded the `QRCodeReaderView`, make the interface become more like **WeChat**.
@@ -63,7 +65,7 @@ into your Podfile file.
 StitchingImage is available under the MIT license. See the LICENSE file for more info.
 
 ---
-README(Chinese)
+README (Chinese)
 ==========
 
 ## 说明 
@@ -124,6 +126,6 @@ pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua/MQRCo
 
 ## 协议
 
-MQRCodeReaderViewController 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
+MQRCodeReaderViewController 被许可在 MIT 协议下使用. 查阅 LICENSE 文件来获得更多信息.
 
 
