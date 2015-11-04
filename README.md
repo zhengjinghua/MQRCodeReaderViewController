@@ -1,4 +1,4 @@
-[English Guide](https://github.com/zhengjinghua/ESTQRCodeReaderViewController#readme-english)
+[English Guide](https://github.com/zhengjinghua/MQRCodeReaderViewController#readme-english)
 
 ## 说明 
 
